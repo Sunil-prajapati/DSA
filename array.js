@@ -38,16 +38,29 @@ myNewArray.push("orange");
 myNewArray.push("mango");
 // console.log(myNewArray.get(1));
 // console.log(myNewArray.pop());
-console.log(myNewArray.shift());
-console.log(myNewArray);
+// console.log(myNewArray.shift());
 
-// challange==
+// challenge==
 function reverse(str) {
   let newArray = [];
   for (let i = str.length - 1; i >= 0; i--) {
     newArray.push(str[i]);
   }
   return str === newArray.join("");
-  return newArray.join("");
+  // return newArray.join("");
 }
-console.log(reverse("121"));
+
+// ==== sentence capitalization =====
+function sentenceCapitalization(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+
+// ===== chunks ====
+function chunks(arr, number) {
+  let newArray = [];
+  for (let i = 0; i < arr.length; i += number) {
+    newArray.push(arr.slice(i, i + number));
+  }
+  return newArray;
+}
+console.log(chunks([2, 3, 1, 4, 5, 6, 7, 8, 9, 10], 2));
