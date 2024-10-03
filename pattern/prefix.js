@@ -7,7 +7,7 @@ var PrefixSum = function (strs) {
   }
   return newArray;
 };
-console.log(PrefixSum([2, 3, 4, 5, 6, 7, 8]));
+PrefixSum([2, 3, 4, 5, 6, 7, 8]);
 // T.C = 0(n)
 // S.C = 0(n);
 
@@ -20,7 +20,9 @@ var prefixSumOptimize = function (strs) {
   }
   return strs;
 };
-console.log(prefixSumOptimize([2, 3, 4, 5, 6, 7, 8]));
+prefixSumOptimize([2, 3, 4, 5, 6, 7, 8]);
 
 // T.C = 0(n)
 // S.C = 0(1);
+
+// ============================
