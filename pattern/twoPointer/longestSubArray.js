@@ -4,7 +4,6 @@ function maxSubArrayLen(nums, k) {
     right = 0,
     sum = 0,
     maxLen = 0;
-
   while (right < nums.length) {
     sum += nums[right];
     while (sum > k) {
